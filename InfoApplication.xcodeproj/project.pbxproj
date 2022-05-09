@@ -17,6 +17,11 @@
 		9C61067C2829A30B00C8B092 /* FeedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106762829A30B00C8B092 /* FeedProtocols.swift */; };
 		9C61067D2829A30B00C8B092 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106772829A30B00C8B092 /* FeedInteractor.swift */; };
 		9C61067E2829A30B00C8B092 /* FeedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106782829A30B00C8B092 /* FeedContainer.swift */; };
+		9C6106812829A63A00C8B092 /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106802829A63A00C8B092 /* ReuseIdentifiable.swift */; };
+		9C6106842829A9DE00C8B092 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106832829A9DE00C8B092 /* FeedViewCell.swift */; };
+		9C6106862829AA9700C8B092 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106852829AA9700C8B092 /* FeedCardView.swift */; };
+		9C6106892829AB1500C8B092 /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106882829AB1500C8B092 /* FeedCardViewModel.swift */; };
+		9C61068B2829B7C000C8B092 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61068A2829B7C000C8B092 /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		9C6106762829A30B00C8B092 /* FeedProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedProtocols.swift; sourceTree = "<group>"; };
 		9C6106772829A30B00C8B092 /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		9C6106782829A30B00C8B092 /* FeedContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContainer.swift; sourceTree = "<group>"; };
+		9C6106802829A63A00C8B092 /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
+		9C6106832829A9DE00C8B092 /* FeedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
+		9C6106852829AA9700C8B092 /* FeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
+		9C6106882829AB1500C8B092 /* FeedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
+		9C61068A2829B7C000C8B092 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 			children = (
 				9C6106702829A2D900C8B092 /* Support files */,
 				9C6106712829A2F500C8B092 /* Modules */,
+				9C61067F2829A62400C8B092 /* Helpers */,
 				9C61066A2829A26E00C8B092 /* Info.plist */,
 			);
 			path = InfoApplication;
@@ -93,6 +104,8 @@
 		9C6106722829A30100C8B092 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				9C6106872829AB0300C8B092 /* ViewModels */,
+				9C6106822829A9D100C8B092 /* Views */,
 				9C6106782829A30B00C8B092 /* FeedContainer.swift */,
 				9C6106772829A30B00C8B092 /* FeedInteractor.swift */,
 				9C6106732829A30B00C8B092 /* FeedPresenter.swift */,
@@ -101,6 +114,32 @@
 				9C6106752829A30B00C8B092 /* FeedViewController.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		9C61067F2829A62400C8B092 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C6106802829A63A00C8B092 /* ReuseIdentifiable.swift */,
+				9C61068A2829B7C000C8B092 /* Font.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9C6106822829A9D100C8B092 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C6106852829AA9700C8B092 /* FeedCardView.swift */,
+				9C6106832829A9DE00C8B092 /* FeedViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C6106872829AB0300C8B092 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9C6106882829AB1500C8B092 /* FeedCardViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,14 +212,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6106892829AB1500C8B092 /* FeedCardViewModel.swift in Sources */,
 				9C61067A2829A30B00C8B092 /* FeedRouter.swift in Sources */,
 				9C61065D2829A26C00C8B092 /* AppDelegate.swift in Sources */,
+				9C6106842829A9DE00C8B092 /* FeedViewCell.swift in Sources */,
 				9C61067B2829A30B00C8B092 /* FeedViewController.swift in Sources */,
 				9C61067D2829A30B00C8B092 /* FeedInteractor.swift in Sources */,
 				9C61067C2829A30B00C8B092 /* FeedProtocols.swift in Sources */,
+				9C61068B2829B7C000C8B092 /* Font.swift in Sources */,
 				9C61067E2829A30B00C8B092 /* FeedContainer.swift in Sources */,
 				9C6106792829A30B00C8B092 /* FeedPresenter.swift in Sources */,
+				9C6106812829A63A00C8B092 /* ReuseIdentifiable.swift in Sources */,
 				9C61065F2829A26C00C8B092 /* SceneDelegate.swift in Sources */,
+				9C6106862829AA9700C8B092 /* FeedCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
