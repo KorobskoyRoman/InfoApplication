@@ -41,7 +41,7 @@ final class FeedViewController: UIViewController {
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        output.viewDidLoad()
+        self.output.viewDidLoad()
 	}
 }
 

@@ -9,12 +9,14 @@ import UIKit
 
 class AppCoordinator {
     
+    private let appDependency: AppDependency
     private let window: UIWindow
     private lazy var tabBarController = UITabBarController()
     private lazy var navigationControllers = AppCoordinator.makeNavigationControllers()
     
-    init(window: UIWindow) {
+    init(window: UIWindow, appDependency: AppDependency) {
         self.window = window
+        self.appDependency = appDependency
         self.setupAppearence()
     }
     
@@ -45,7 +47,7 @@ private extension AppCoordinator {
         guard let navController = self.navigationControllers[.feed] else {
             fatalError("cant' find navController")
         }
-        let contex = FeedContext(moduleOutput: nil)
+        let contex = FeedContext(moduleDependencies: self.appDependency, moduleOutput: nil)
         let container = FeedContainer.assemble(with: contex)
         
         navController.setViewControllers([container.viewController], animated: true)

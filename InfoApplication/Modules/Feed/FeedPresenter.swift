@@ -15,6 +15,8 @@ final class FeedPresenter {
 	private let router: FeedRouterInput
 	private let interactor: FeedInteractorInput
     
+    private var articles: [Article] = []
+    
     init(router: FeedRouterInput, interactor: FeedInteractorInput) {
         self.router = router
         self.interactor = interactor
@@ -22,22 +24,34 @@ final class FeedPresenter {
 }
 
 extension FeedPresenter: FeedModuleInput {
-    func viewDidLoad() {
-        self.view?.set(viewModels: self.makeViewModels())
-    }
 }
 
 extension FeedPresenter: FeedViewOutput {
+    func viewDidLoad() {
+        self.interactor.loadArticles()
+    }
 }
 
 extension FeedPresenter: FeedInteractorOutput {
+    func didEncounterError(_ error: Error) {
+        //
+    }
+    
+    func didLoad(_ articles: [Article]) {
+        self.articles = articles
+        let viewModels: [FeedCardViewModel] = self.makeViewModels(self.articles)
+        self.view?.set(viewModels: viewModels)
+        print(self.articles.count)
+    }
 }
 
 private extension FeedPresenter {
-    func makeViewModels() -> [FeedCardViewModel]{
-        return [
-            FeedCardViewModel(info: "News", title: "news 123123 213123123 12312", shortDescription: "short description 1", imageName: "image"),
-            FeedCardViewModel(info: "News", title: "news 123123 213123123 12312", shortDescription: "short description 1", imageName: "image"),
-            FeedCardViewModel(info: "News", title: "news 123123 213123123 12312", shortDescription: "short description 1", imageName: "image")]
+    func makeViewModels(_ articles: [Article]) -> [FeedCardViewModel] {
+        return articles.map { article in
+            FeedCardViewModel(info: "info",
+                              title: article.title ?? "",
+                              shortDescription: article.description ?? "",
+                              imageName: article.urlToImage ?? "")
+        }
     }
 }
