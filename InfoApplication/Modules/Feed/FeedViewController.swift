@@ -36,7 +36,7 @@ final class FeedViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.collectionView.frame = self.view.frame
+        self.collectionView.frame = self.view.bounds
     }
     
 	override func viewDidLoad() {
