@@ -22,6 +22,8 @@
 		9C6106862829AA9700C8B092 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106852829AA9700C8B092 /* FeedCardView.swift */; };
 		9C6106892829AB1500C8B092 /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106882829AB1500C8B092 /* FeedCardViewModel.swift */; };
 		9C61068B2829B7C000C8B092 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61068A2829B7C000C8B092 /* Font.swift */; };
+		9C61068D282A9FA200C8B092 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61068C282A9FA200C8B092 /* AppCoordinator.swift */; };
+		9C61068F282AA2EB00C8B092 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61068E282AA2EB00C8B092 /* Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		9C6106852829AA9700C8B092 /* FeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
 		9C6106882829AB1500C8B092 /* FeedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
 		9C61068A2829B7C000C8B092 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		9C61068C282A9FA200C8B092 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9C61068E282AA2EB00C8B092 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9C6106722829A30100C8B092 /* Feed */,
+				9C61068C282A9FA200C8B092 /* AppCoordinator.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			children = (
 				9C6106802829A63A00C8B092 /* ReuseIdentifiable.swift */,
 				9C61068A2829B7C000C8B092 /* Font.swift */,
+				9C61068E282AA2EB00C8B092 /* Localization.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -218,10 +224,12 @@
 				9C6106842829A9DE00C8B092 /* FeedViewCell.swift in Sources */,
 				9C61067B2829A30B00C8B092 /* FeedViewController.swift in Sources */,
 				9C61067D2829A30B00C8B092 /* FeedInteractor.swift in Sources */,
+				9C61068D282A9FA200C8B092 /* AppCoordinator.swift in Sources */,
 				9C61067C2829A30B00C8B092 /* FeedProtocols.swift in Sources */,
 				9C61068B2829B7C000C8B092 /* Font.swift in Sources */,
 				9C61067E2829A30B00C8B092 /* FeedContainer.swift in Sources */,
 				9C6106792829A30B00C8B092 /* FeedPresenter.swift in Sources */,
+				9C61068F282AA2EB00C8B092 /* Localization.swift in Sources */,
 				9C6106812829A63A00C8B092 /* ReuseIdentifiable.swift in Sources */,
 				9C61065F2829A26C00C8B092 /* SceneDelegate.swift in Sources */,
 				9C6106862829AA9700C8B092 /* FeedCardView.swift in Sources */,
