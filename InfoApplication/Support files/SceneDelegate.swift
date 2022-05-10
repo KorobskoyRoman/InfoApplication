@@ -9,6 +9,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    private lazy var appDependency: AppDependency = AppDependency.makeDefault()
     private var appCoordinator: AppCoordinator?
     
     var window: UIWindow?
@@ -19,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        self.appCoordinator = AppCoordinator(window: window)
+        self.appCoordinator = AppCoordinator(window: window, appDependency: self.appDependency)
         self.window = window
         self.appCoordinator?.start()
     }
