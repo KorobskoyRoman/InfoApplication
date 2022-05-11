@@ -59,7 +59,6 @@ extension FeedViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let viewModel = self.viewModels[indexPath.item]
         let cell = collectionView.dequeueCell(cellType: FeedViewCell<FeedCardView>.self, for: indexPath)
-//        let viewModel = FeedCardViewModel(title: "card cell \(indexPath.item)", imageName: "image")
         cell.containerView.update(with: viewModel)
         return cell
     }
@@ -71,6 +70,12 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
         let width = collectionView.frame.width - collectionView.contentInset.left - collectionView.contentInset.right
         let height = width * ratio
         return CGSize(width: width, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        willDisplay cell: UICollectionViewCell,
+                        forItemAt indexPath: IndexPath) {
+        self.output.willDisplay(at: indexPath.item)
     }
 }
 
