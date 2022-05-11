@@ -9,16 +9,24 @@ import Foundation
 
 struct URLFactory {
     private static let apiKey = "adab569a5e6e442da872664e3ab15f6d"
-    private let urlComponents: URLComponents
-    
-    let articles: String
-    
-    init(baseUrl: URL = URL(string: "https://newsapi.org/v2/")!) {
+    private static var baseUrl: URL {
+        return baseUrlComponents.url!
+    }
+    private static let baseUrlComponents: URLComponents = {
+        let url = URL(string: "https://newsapi.org/v2/")!
         let queryItem = URLQueryItem(name: "apiKey", value: URLFactory.apiKey)
-        var urlComponents = URLComponents(url: baseUrl, resolvingAgainstBaseURL: false)!
+        var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)!
         urlComponents.queryItems = [queryItem]
-        
-        self.urlComponents = urlComponents
-        self.articles = urlComponents.url!.appendingPathComponent("everything").absoluteString
+        return urlComponents
+    }()
+    
+    
+    static func articles(params: ArticlesRequestParams) -> String {
+        let params = [URLQueryItem(name: "pageSize", value: "\(params.pageSizze)"),
+                      URLQueryItem(name: "page", value: "\(params.page)"),
+                      URLQueryItem(name: "q", value: params.search)]
+        var urlComponents = baseUrlComponents
+        urlComponents.queryItems?.append(contentsOf: params)
+        return urlComponents.url!.appendingPathComponent("everything").absoluteString
     }
 }

@@ -8,9 +8,8 @@
 import Foundation
 
 extension NetworkService: ArticlesNetworkProtocol {
-    func requestArticles(completion: @escaping (Result<ArticlesResponse, Error>) -> Void) {
-        let params = URLQueryItem(name: "q", value: "world")
-        let url = "\(urlFactory.articles)&\(params)"
-        baseRequest(url: url, completion: completion)
+    func requestArticles(params: ArticlesRequestParams, completion: @escaping (Result<ArticlesResponse, Error>) -> Void) {
+        let url = URLFactory.articles(params: params)
+        self.baseRequest(url: url, completion: completion)
     }
 }
