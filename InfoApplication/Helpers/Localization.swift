@@ -13,4 +13,8 @@ enum Localization {
     static let video = "Видео"
     static let thumbsUp = "Годнота"
     static let podcasts = "Подкасты"
+    
+    static let loginTitle = "Авторизация"
+    static let loginButton = "Войти"
+    static let closeButton = "Закрыть"
 }

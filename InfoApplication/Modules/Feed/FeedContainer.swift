@@ -23,6 +23,10 @@ final class FeedContainer {
 		presenter.moduleOutput = context.moduleOutput
 
 		interactor.output = presenter
+        
+        router.navigationControllerProvider = { [weak viewController] in
+            viewController?.navigationController
+        }
 
         return FeedContainer(view: viewController, input: presenter, router: router)
 	}

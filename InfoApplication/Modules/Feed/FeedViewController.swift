@@ -42,6 +42,10 @@ final class FeedViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
         self.output.viewDidLoad()
+        navigationItem.rightBarButtonItem = BlockBarButtonItem.item(title: Localization.loginButton, style: .plain, handler: { [weak self] in
+            self?.output.onLoginTap()
+            
+        })
 	}
 }
 
