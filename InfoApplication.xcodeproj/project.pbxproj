@@ -31,6 +31,17 @@
 		9C610698282AB22A00C8B092 /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C610697282AB22A00C8B092 /* URLFactory.swift */; };
 		9C61069A282AB39C00C8B092 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C610699282AB39C00C8B092 /* AppDependency.swift */; };
 		9C61069D282AC6F000C8B092 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61069C282AC6F000C8B092 /* UIImage + Extension.swift */; };
+		9C6106A1282D790F00C8B092 /* BlockBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106A0282D790F00C8B092 /* BlockBarButtonItem.swift */; };
+		9C6106A3282D794600C8B092 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106A2282D794600C8B092 /* Blocks.swift */; };
+		9C6106AA282D83FC00C8B092 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106A4282D83FB00C8B092 /* LoginPresenter.swift */; };
+		9C6106AB282D83FC00C8B092 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106A5282D83FB00C8B092 /* LoginRouter.swift */; };
+		9C6106AC282D83FC00C8B092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106A6282D83FB00C8B092 /* LoginViewController.swift */; };
+		9C6106AD282D83FC00C8B092 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106A7282D83FB00C8B092 /* LoginProtocols.swift */; };
+		9C6106AE282D83FC00C8B092 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106A8282D83FB00C8B092 /* LoginInteractor.swift */; };
+		9C6106AF282D83FC00C8B092 /* LoginContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106A9282D83FB00C8B092 /* LoginContainer.swift */; };
+		9C6106B2282D84D400C8B092 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6106B1282D84D300C8B092 /* BaseRouter.swift */; };
+		9C8B0D82282D961D00F18C86 /* SocialButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0D81282D961C00F18C86 /* SocialButtonFactory.swift */; };
+		9C8B0D85282D989000F18C86 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B0D84282D989000F18C86 /* LoginService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +71,17 @@
 		9C610697282AB22A00C8B092 /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
 		9C610699282AB39C00C8B092 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 		9C61069C282AC6F000C8B092 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
+		9C6106A0282D790F00C8B092 /* BlockBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockBarButtonItem.swift; sourceTree = "<group>"; };
+		9C6106A2282D794600C8B092 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		9C6106A4282D83FB00C8B092 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		9C6106A5282D83FB00C8B092 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		9C6106A6282D83FB00C8B092 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9C6106A7282D83FB00C8B092 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		9C6106A8282D83FB00C8B092 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		9C6106A9282D83FB00C8B092 /* LoginContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContainer.swift; sourceTree = "<group>"; };
+		9C6106B1282D84D300C8B092 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		9C8B0D81282D961C00F18C86 /* SocialButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButtonFactory.swift; sourceTree = "<group>"; };
+		9C8B0D84282D989000F18C86 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		A35451785A8E670ADE35A609 /* Pods-InfoApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoApplication.debug.xcconfig"; path = "Target Support Files/Pods-InfoApplication/Pods-InfoApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		EEA25F17E061E62C6C1B54F1 /* Pods_InfoApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfoApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,8 +122,10 @@
 				9C6106702829A2D900C8B092 /* Support files */,
 				9C61069B282AC6DA00C8B092 /* Extensions */,
 				9C61067F2829A62400C8B092 /* Helpers */,
+				9C61069E282D78F100C8B092 /* Common */,
 				9C6106712829A2F500C8B092 /* Modules */,
 				9C610690282AAE6000C8B092 /* Networking */,
+				9C8B0D83282D987900F18C86 /* Services */,
 				9C61066A2829A26E00C8B092 /* Info.plist */,
 			);
 			path = InfoApplication;
@@ -122,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				9C6106722829A30100C8B092 /* Feed */,
+				9C6106B0282D840B00C8B092 /* Login */,
 				9C61068C282A9FA200C8B092 /* AppCoordinator.swift */,
 				9C610699282AB39C00C8B092 /* AppDependency.swift */,
 			);
@@ -187,6 +212,54 @@
 				9C61069C282AC6F000C8B092 /* UIImage + Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C61069E282D78F100C8B092 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9C61069F282D78FE00C8B092 /* UI */,
+				9C6106A2282D794600C8B092 /* Blocks.swift */,
+				9C6106B1282D84D300C8B092 /* BaseRouter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9C61069F282D78FE00C8B092 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9C6106A0282D790F00C8B092 /* BlockBarButtonItem.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9C6106B0282D840B00C8B092 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9C6106B3282D95D700C8B092 /* Helpers */,
+				9C6106A9282D83FB00C8B092 /* LoginContainer.swift */,
+				9C6106A8282D83FB00C8B092 /* LoginInteractor.swift */,
+				9C6106A4282D83FB00C8B092 /* LoginPresenter.swift */,
+				9C6106A7282D83FB00C8B092 /* LoginProtocols.swift */,
+				9C6106A5282D83FB00C8B092 /* LoginRouter.swift */,
+				9C6106A6282D83FB00C8B092 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9C6106B3282D95D700C8B092 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C8B0D81282D961C00F18C86 /* SocialButtonFactory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9C8B0D83282D987900F18C86 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9C8B0D84282D989000F18C86 /* LoginService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		BE6EFBC62D7E9375192572F8 /* Frameworks */ = {
@@ -320,9 +393,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6106AD282D83FC00C8B092 /* LoginProtocols.swift in Sources */,
+				9C6106AA282D83FC00C8B092 /* LoginPresenter.swift in Sources */,
 				9C610694282AB0B600C8B092 /* NetworkServiceProtocols.swift in Sources */,
 				9C6106892829AB1500C8B092 /* FeedCardViewModel.swift in Sources */,
+				9C6106AB282D83FC00C8B092 /* LoginRouter.swift in Sources */,
+				9C6106A1282D790F00C8B092 /* BlockBarButtonItem.swift in Sources */,
 				9C61067A2829A30B00C8B092 /* FeedRouter.swift in Sources */,
+				9C6106B2282D84D400C8B092 /* BaseRouter.swift in Sources */,
 				9C61065D2829A26C00C8B092 /* AppDelegate.swift in Sources */,
 				9C6106842829A9DE00C8B092 /* FeedViewCell.swift in Sources */,
 				9C61067B2829A30B00C8B092 /* FeedViewController.swift in Sources */,
@@ -332,15 +410,21 @@
 				9C61067C2829A30B00C8B092 /* FeedProtocols.swift in Sources */,
 				9C61068B2829B7C000C8B092 /* Font.swift in Sources */,
 				9C61067E2829A30B00C8B092 /* FeedContainer.swift in Sources */,
+				9C6106AE282D83FC00C8B092 /* LoginInteractor.swift in Sources */,
 				9C610692282AAE8800C8B092 /* NetworkService.swift in Sources */,
 				9C6106792829A30B00C8B092 /* FeedPresenter.swift in Sources */,
 				9C61069D282AC6F000C8B092 /* UIImage + Extension.swift in Sources */,
+				9C6106AF282D83FC00C8B092 /* LoginContainer.swift in Sources */,
 				9C610696282AB17800C8B092 /* NetworkService+Articles.swift in Sources */,
+				9C8B0D85282D989000F18C86 /* LoginService.swift in Sources */,
+				9C6106A3282D794600C8B092 /* Blocks.swift in Sources */,
 				9C61068F282AA2EB00C8B092 /* Localization.swift in Sources */,
 				9C6106812829A63A00C8B092 /* ReuseIdentifiable.swift in Sources */,
 				9C61065F2829A26C00C8B092 /* SceneDelegate.swift in Sources */,
 				9C6106862829AA9700C8B092 /* FeedCardView.swift in Sources */,
+				9C6106AC282D83FC00C8B092 /* LoginViewController.swift in Sources */,
 				9C610698282AB22A00C8B092 /* URLFactory.swift in Sources */,
+				9C8B0D82282D961D00F18C86 /* SocialButtonFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

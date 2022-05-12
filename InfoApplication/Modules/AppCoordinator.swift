@@ -33,10 +33,9 @@ class AppCoordinator {
 private extension AppCoordinator {
     
     func setupAppearence() {
-        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().barTintColor = .black
         UINavigationBar.appearance().tintColor = .black
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-//        UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().shadowImage = UIImage()
         
         UITabBar.appearance().barTintColor = .white

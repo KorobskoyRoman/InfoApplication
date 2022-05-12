@@ -44,6 +44,10 @@ extension FeedPresenter: FeedViewOutput {
         isReloading = true
         interactor.reload()
     }
+    
+    func onLoginTap() {
+        router.showLogin()
+    }
 }
 
 extension FeedPresenter: FeedInteractorOutput {
